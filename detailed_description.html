@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset = "utf-8"> 
+<style>
+.main {
+  margin: 30px 200px;
+  padding: 14px 20px;
+}
+
+body{
+	margin: 0;
+	font-family: Agency FB, Arial, Helvetica, sans-serif;
+}
+
+.title {
+	width: 100%;
+	padding: 5px 15px;
+	font-size: 28px;
+	font-family: Candara Light, Tahoma, Geneva, sans-serif;
+	background-color: gray;
+}
+
+p {
+	font-size: 20px;
+	margin: 10px 10px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+.container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.information {
+  margin-top: 175px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 150px;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subbutton {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  width: 182px;
+}
+
+
+.navbar a:hover, .subnav:hover .subbutton {
+  background-color: green;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: green;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.vertical-menu {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 210px;
+}
+
+.vertical-menu a {
+  background-color: #eee; 
+  color: black; 
+  display: block; 
+  padding: 12px; 
+  text-decoration: none; 
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; 
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50; 
+  color: white;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 2px solid #0a0a0a;
+    text-align: left;
+    padding: 12px;
+  }
+  
+
+  tr:nth-child(even) {
+    background-color: #dad6d6;
+  } 
+</style>
+</head>
+<body>
+<div class = "container">
+	<div class = "title">
+	<h1>Yet to be named brigade</h1>
+	</div>
+	<div class="navbar">
+		<a href="home.html">Home</a>
+		<a href="team_profile.html">Team Profile</a>
+		<a href="tools.html">Tools</a>
+	  <a href="project_description.html">Project Description</a>
+	  <a href="overview.html">Overview</a>
+	  <div class="subnav">
+		<button class="subbutton">Detailed Description  <i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="detailed_description.html#aims">Aims</a>
+		  <a href="detailed_description.html#plans_and_progress">Plans & Progress</a>
+		  <a href="detailed_description.html#roles">Roles</a>
+		  <a href="detailed_description.html#scope_and_limits">Scope & Limits</a>
+		  <a href="detailed_description.html#tools_and_technologies">Tools & Technologies</a>
+		  <a href="detailed_description.html#testing">Testing</a>
+		  <a href="detailed_description.html#timeframe">Timeframe</a>
+		  <a href="detailed_description.html#risks">Risks</a>
+		  <a href="detailed_description.html#group_processes_and_communications">Group Processes & Communications</a>
+		  <a href="detailed_description.html#skills_and_jobs">Skills & Jobs</a>
+		</div>
+	  </div> 
+	</div>
+</div>
+
+ <div class="vertical-menu">
+  <a href="#aims" class = "active">Aims</a>
+  <a href="#detailed_description.html#plans_and_progress">Plans & Progress</a>
+  <a href="#roles">Roles</a>
+  <a href="#scope_and_limits">Scope & Limits</a>
+  <a href="#tools_and_technologies">Tools & Technologies</a>
+  <a href="#testing">Testing</a>
+  <a href="#timeframe">Timeframe</a>
+  <a href="#risks">Risks</a>
+  <a href="#group_processes_and_communications">Group Processes & Communications</a>
+  <a href="#skills_and_jobs">Skills & Jobs</a>  
+  </div>
+  
+<div class = "main">
+<h2><a id = "aims">Aims</a></h2>
+<p>Basically, our main objective for this project is to provide an environment where people can watch something together without having to
+ meet each other in real life. We see that this goal is very realistic during this COVID-19 outbreak as our project will allow people to 
+ stay home and watch movie together instead of going to the cinema and become vulnerable to be infected by the disease. </p>
+<p>Moreover, in a long run, when the COVID-19 crisis is over and people start to get back to normal life, we also expect our users to still 
+be benefit from this project. Our project would be act as a platform of social media like Facebook or YouTube where it can connect people 
+from different places in the world together. Let say a group of friends or family who have the same favorite movie series that they usually 
+spend time watching it together and discuss about it during the show. However, due to some reason, they cannot watch the series together 
+anymore so when they want to discuss about it, spoiling the movie contents would be unavoidable as there would be people who have not watch 
+it yet. Therefore, our project will solve this problem out and people can watch the movie and talk about it at a same time no matter of their 
+current geographical location. Same reason can be applied on a group of people who are seeking to see the new movie in cinema but cannot 
+discuss about it during the show because it would distract others who still watching it.</p>
+<p>We understand the loneliness while watching a movie alone at home or even at the cinema. As a result, we are aiming for our users to be 
+able to meet new people and make friends as they watch a movie in one of our hosted session in the project. We also have another target audience,
+ which is the movies’ fan page groups. For example, a new season of Game of Thrones has been released and to be replaced with the last two 
+ seasons, people are very happy about it and GoT’s fan page community decided to organize an offline party to watch the new season together. 
+ However, it is impossible to host an offline session for up to millions of people to watch it together and discuss about it, it is even harder 
+ because everyone’s current location would be very inconvenient to make it to the offline party. That is where our project will come and save
+ the day for them, make the impossible become possible. Famous movie reviewers will also be benefit from it as they can now become a streamer 
+ and review a movie in a new way, which allow them to attract new viewers for their channels.</p>
+ <p>Just like any others movie platform, copyright is the issue that we have to solve, and it wouldn’t take a small amount of money to gain 
+ the right to show a movie via the internet, especially recently released movie. This will be our last aim for the project but also the most 
+ important one as it would require the most work and money to overcome it and when it does, everything mentioned above can finally become true.</p>
+<h2><a id = "plans_and_progress">Plans & Progress</a></h2>
+<p>As discussed previously our project will be a place where people can watch movie together online. Our group has decided to create this project 
+on PC platform first, before developing on other platform like mobile or even game console. This stage of development in term of platform based 
+is very realistic as it is simpler to create a PC based program and more people would spend time to watch movie on a PC rather than on a phone. 
+On PC platform, we will release it on both website and application version, but we will focus more on website version at the beginning due to the 
+convenient and stableness that it would bring. We will also make sure that the website version would work in other platforms even though it won’t 
+be as stable as on the PC, since phone and game console also has its own internet browser, this should be able to work out.</p>
+<p>It is obvious that web programming skills, including html, JavaScript are very essential in this project as we have to implement it on a web 
+version at first and use it as a basic to develop on other version. Moreover, since we would need to store and manage a huge number of user’s 
+information (username, password, etc.), database skill would be another requirement for this project. Based on our group member’s available skills,
+we can assure that the skills required by this project can be fulfilled and applied easily. </p>
+<p>Our ideal model for this project is an application called Discord, where users can create different channels and invite their friends in for chat,
+voice, and video call and even stream. Even though its main purpose is to provide a place where gamers could join in and communicate with each other 
+while playing game, it is still a suitable example that we can use to develop our project. Another ideal model that we used is obviously YouTube, 
+the biggest online video-sharing platform in the world. It is our job to combine the main purpose of these two applications together to become our 
+Movie Night project, an online video-sharing platform and communication forum on both voice and text. Thought it could be very difficult to perform 
+this, but it is not impossible at all.</p>
+<p>We did mention that copyright would be the main issue for us to solve if we want to make this project to be able to accomplish its main purpose. 
+First, we would need to do several testings on the project after we done coding it and implemented all the necessary requirements before officially 
+release it on the internet. In this testing phase, we would mainly focus on putting our own video or tester’s video to test if it is functionally 
+working or not. When everything is working and ready to be release, it is our time to get the copyright access to several movies. A proper strategy 
+would be to use less popular movies but still have a decent amount of fan based to start with as it would cost less and return less risk. If things 
+tend to work out well for us and we are able to gain a huge amount of audience, it is when we target the more popular movies and even the newly 
+released one. </p>
+<p>Currently, we are not really start to create this project, everything we did so far were just planning this out and identify a few things. Firstly, 
+we did evaluate every member in the group to see all our weakness and strength as well as what we are more comfortable doing with so that a suitable 
+task can be given out to each of the members. Secondly, we were doing a checklist on what tools and technologies is needed for the project as well as 
+identify our main goals and risks for this project. Since time needed to complete this project can be vague because it depends on a lot of things, we 
+are not sure when it can be officially release if we start working on it by now, our target would be to complete it before the end of this year as 
+the latest. </p>
+<h2><a id = "roles">Roles</a></h2>
+<p>For more effective work, it is very important to determine the role of each member in team and base on their strong areas. 
+<p>For Movie Night project </p>
+<p>Liam is a person who always suggest ideas, sets up the time of meeting, separates tasks in our team. 
+Therefore, he is worth to become a team leader of this project. This role refers more skills of a real leader than technical, 
+he has ability to lead people to work on schedule, this makes any tasks of our team in this project will work smoothly. </p>
+<p>Nick has basic knowledge about CSS and HTML, he always takes responsible of every parts of his work. So it will be perfect when let him works on the
+user interface of the project, who will design the interface of the application to attract more people using Movie Night in the future. This is really 
+important role. </p>
+<p>One of another position of the project is Technical Designer, Quang has experience on set up GitHub for our team of the last assignment. So he will 
+compatible with technical roles, who will set up and support for any technical areas of our project. </p>
+<p> Prottay and Tran have knowledge about testing as well as making the survey to get the feedback of the users when Movie Night is released. We understand
+ the important experienced of the user, so their feedback will be the key factors for our project improvement and maintenance also. </p>
+<h2><a id = "scope_and_limits">Scope & Limits</a></h2>
+<p><b>Scope</b></p>
+<p>When our project is completed, we will determine and approach to the potential customer such as teenagers and movie addicts or entertain application company 
+to demonstrate this project, about the aim, the scope, the competitive ability and the potential limits as well as demo how it work then get the feedback. We hope 
+this project will be more popular in the future because it adapts to teenagers and movie addicts, builds the social life while quarantine, keeps in touch with everyone,
+ reduces stress and boring, shows up the flexibility because it can work locally or over the internet, creates inspiration for more project ideas to build a modern life </p>
+<p><b>Limits</b></p>
+<p><li> Difficult to competitive with other available streaming platforms </li> </p> 
+<p><li>Base on some its modern features so it might be not suitable for the old or some people who do not usually approach to modern technology, so it will take them a long time to know how to use it fluently.  <p></li>
+
+<h2><a id = "tools_and_technologies">Tools & Technologies</a></h2>
+<p>
+  The hardware needed for this project, other than a computer and an internet connection, is a server to host connections between users. 
+  As for software, any software development platform would do, such as <a href = "https://visualstudio.microsoft.com/vs/">Visual Studio</a>.
+  Some software would also be required to handle information that travels from the user to the server, such as <a href = "https://www.capterra.com/p/141792/Pulseway/#about">Pulseway</a>.
+  Cybersecurity software is also essential as the protection of the users information is paramount, programs such as <a href= "https://www.telstra.com.au/small-business/business-services/business-cyber-security-services">Telstra business-cyber-security-services</a> would be ideal here. 
+  An API would also be required so that the web version and the application version are able to communicate with each other, programs such as <a href= "https://azure.microsoft.com/en-au/">Microsoft Azure</a> would be required.
+  Github would be used to store work while it is being developed.
+</p>
+<p>
+  As for prior knowledge, the whole group has experience using Github from the previous assignment as well as this one. 
+  Other than that no-one has any experience with any of the other technologies listed, which would be a hurdle to overcome as new skills would need to be learned.
+</p>
+<h2><a id = "testing">Testing</a></h2>
+<p>
+  Testing is an integral part of software development, as such many tests will be performed in order to ensure that the Movie Night will be at its best when the time comes to deploy it.
+  There are many different types of testing, however not all are applicable to this software. The types of testing that will be used when developing are:
+  <ul>
+      <li>Alpha testing</li>
+      <li>Beta testing</li>
+      <li>Browser testing</li>
+      <li>Accessibility testing</li>
+      <li>Compatibility testing</li>
+      <li>End-to-end testing</li>
+      <li>Alpha testing</li>
+      <li>Integration tesing</li>
+      <li>Performance testing</li>
+      <li>Recovery testing</li>
+      <li>Security testing</li>
+      <li>Usability testing</li>
+  </ul>
+  It is possible that in the future more types of testing is required, however, the ones listed above are the most important regarding this software currently.
+</p>
+<p>
+  To test the usability of the software, test users are required. Realistically, the more people willing to test, the better, however, depending on the stage of production could alter the number of people required.
+  For example, if the "group" mode was the part that was getting tested, only a small number of groups would be required, approximately 15 (3 groups of 5), would be required to test this function. 
+  However, in this case of the "streamer" mode, a significantly greater number of people would be required to test, not only to see if it works, but also to see if servers can handle the stress of so many people, an approximate number would be around 1000 although this number could increase depending on the initial popularity.
+  The way that users would be found is mainly through posting on forums and websites such as reddit, usertesting.com (mainly for the interface, not so much for performance testing) and other online platforms. Users do not need to have any background, however familiarity with basic computer knowledge would be ideal.
+</p>
+<p>
+ Depending on the type of tests done, the definition of success varies. 
+ Success could mean that the software works or that it doesn't crash, regarding stress testing, it could mean that the servers can handle the load of hundreds, if not thousands, of users.  
+</p>
+<h2><a id = "timeframe">Timeframe</a></h2>
+<table>
+  <tr>
+      <th>Team Member</th>
+      <th>Week 1</th>
+      <th>Week 2</th>
+      <th>Week 3</th>
+      <th>Week 4</th>
+      <th>Week 5</th>
+      <th>Week 6</th>
+      <th>Week 7</th>
+      <th>Week 8</th>
+      <th>Week 9</th>
+      <th>Week 10</th>
+      <th>Week 11</th>
+      <th>Week 12</th>
+      <th>Week 13</th>
+      <th>Week 14</th>
+  </tr>
+  <tr><td>Liam</td>
+      
+      <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li>Assist with any team member that needs help. </li>
+      <li>Create paper prototype with group to organise basic layout of application/website </li>
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li>Assist with any team member that needs help. </li>
+      
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li><strong>GOAL:</strong> basic working prototype ready for simple  UI testing. </li>
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li>Get feedback from user testing</li>
+      <li>implement changes based on user testing if any  </li>
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li>Continue implementing changes </li>
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li><strong>GOAL:</strong> have a more refined application available for user testing</li>
+      
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li>Start acquiring a server and related equipment for online functionality. </li>
+      <li>Get feedback from user testing   </li>
+      <li>implement changes based on user testing if any</li>
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li>Continue acquiring servers  and related equipment if not fully acquired</li>
+      
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li>All required software should be acquired.</li>
+      <li>Start working on implementing online functionalities </li>
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li>Continue working on implementing online functionalities </li>
+      
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li><strong>GOAL:</strong> have online functionalities implemented and ready for the testing required </li>
+      
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li>Implement changes if any are required </li>
+     
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li>Continue implementing changes   </li>
+     
+    </ul>
+    </td>
+    <td> 
+      <ul>  
+      <li>Organise team meeting: Sort out goals for each area for the week. </li>
+      <li><strong>GOAL:</strong> have a fully functioning application ready for use (there always room for improvement)</li>
+      
+    </ul>
+    </td>
+  </tr>
+  <tr><td>Nick</td>
+     <td>
+       <ul>
+         <li>Attend team meeting</li>
+         <li>Create paper prototype with group to organise basic layout of application/website  </li>
+         <li>Begin on designing User Interface.</li>
+       </ul>
+     </td> 
+     <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Continue working on UI</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li><strong>GOAL:</strong> basic working prototype ready for simple  UI testing.</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Get feedback from user testing  </li>
+        <li>implement changes based on user testing if any </li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Continue implementing changes  </li>
+        <li>Continue working on UI</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li><strong>GOAL:</strong> have a more refined application available for user testing</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Get feedback from user testing  </li>
+        <li>implement changes based on user testing if any </li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>continue working on UI if need be, if not, assist Quang.</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Start working on implementing online functionalities</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Continue working on implementing online functionalities </li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li><strong>GOAL:</strong> have online functionalities implemented and ready for the testing required </li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Implement changes if any are required</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Continue implementing changes  </li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li><strong>GOAL:</strong> have a fully functioning application ready for use (there always room for improvement)</li>
+      </ul>
+    </td> 
+  </tr>
+  <tr><td>Quang</td>
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Create paper prototype with group to organise basic layout of application/website  </li>
+        <li>Begin coding application</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Continue working on code</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li><strong>GOAL:</strong> basic working prototype ready for simple  UI testing</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Get feedback from user testing    </li>
+        <li>implement changes based on user testing if any </li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Continue implementing changes  </li>
+        <li>Continue working on code</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li><strong>GOAL:</strong>have a more refined application available for user testing</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Get feedback from user testing </li>
+        <li>implement changes based on user testing if any </li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>continue working on code.</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Start working on implementing online functionalities</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Continue working on implementing online functionalities </li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li><strong>GOAL:</strong> have online functionalities implemented and ready for the testing required </li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Implement changes if any are required</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Continue implementing changes  </li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li><strong>GOAL:</strong> have a fully functioning application ready for use (there always room for improvement)</li>
+      </ul>
+    </td> 
+    
+</tr>
+<tr><td>Prottay</td>
+  <td>
+    <ul>
+      <li>Attend team meeting </li>
+      <li>Create paper prototype with group to organise basic layout of application/website </li>
+      <li>Assist Nick/Quang</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>Attend team meeting </li>
+      <li>Continue assisting Nick/Quang</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li><strong>GOAL:</strong> basic working prototype ready for simple  UI testing.   </li>
+      <li>Begin looking for testers.</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>Attend team meeting </li>
+      <li>Get feedback from user testing  </li>
+      <li>implement changes based on user testing if any </li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>Attend team meeting </li>
+      <li>Continue implementing changes </li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>Attend team meeting </li>
+      <li><strong>GOAL:</strong> have a more refined application available for user testing</li>
+      <li>Begin looking for testers.</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>Attend team meeting </li>
+      <li>Get feedback from user testing  </li>
+      <li>implement changes based on user testing if any  </li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>Attend team meeting </li>
+      <li>Assist Quang</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>Attend team meeting</li>
+      <li>Start working on implementing online functionalities</li>
+    </ul>
+  </td> 
+  <td>
+    <ul>
+      <li>Attend team meeting</li>
+      <li>Continue working on implementing online functionalities </li>
+    </ul>
+  </td> 
+  <td>
+    <ul>
+      <li>Attend team meeting</li>
+      <li><strong>GOAL:</strong> have online functionalities implemented and ready for the testing required </li>
+    </ul>
+  </td> 
+  <td>
+    <ul>
+      <li>Attend team meeting</li>
+      <li>Implement changes if any are required</li>
+    </ul>
+  </td> 
+  <td>
+    <ul>
+      <li>Attend team meeting</li>
+      <li>Continue implementing changes  </li>
+    </ul>
+  </td> 
+  <td>
+    <ul>
+      <li>Attend team meeting</li>
+      <li><strong>GOAL:</strong> have a fully functioning application ready for use (there always room for improvement)</li>
+    </ul>
+  </td> 
+    
+</tr>
+<tr><td>Tran</td>
+    
+    <td>
+      <ul>
+        <li>Attend team meeting </li>
+        <li>Create paper prototype with group to organise basic layout of application/website </li>
+        <li>Assist Nick/Quang</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting </li>
+        <li>Continue assisting Nick/Quang</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li><strong>GOAL:</strong> basic working prototype ready for simple  UI testing.   </li>
+        <li>Begin looking for testers.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting </li>
+        <li>Get feedback from user testing  </li>
+        <li>implement changes based on user testing if any </li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting </li>
+        <li>Continue implementing changes </li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting </li>
+        <li><strong>GOAL:</strong> have a more refined application available for user testing</li>
+        <li>Begin looking for testers.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting </li>
+        <li>Get feedback from user testing  </li>
+        <li>implement changes based on user testing if any  </li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting </li>
+        <li>Assist Quang</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Start working on implementing online functionalities</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Continue working on implementing online functionalities </li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li><strong>GOAL:</strong> have online functionalities implemented and ready for the testing required </li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Implement changes if any are required</li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li>Continue implementing changes  </li>
+      </ul>
+    </td> 
+    <td>
+      <ul>
+        <li>Attend team meeting</li>
+        <li><strong>GOAL:</strong> have a fully functioning application ready for use (there always room for improvement)</li>
+      </ul>
+    </td>
+</tr>
+</table>
+<h2><a id = "risks">Risks</a></h2>
+<p>This app has a few risks associated with it. There are always some generic risks associated with a project but in the case of our app we 
+have a few other risks.</p>
+
+<p>As a movie app, we would need to lisence a lot of movies for the app. This would be one of the biggest challenges as we live in an age of 
+netflix and many other streaming services that have already signed contracts with many movies. We also need to have a strong cyber security 
+team because these apps are usually targeted by cyber criminals because of the frequency of online payments. Having a strong cyber security 
+unit is particularly challenging because currently our team members lack the expertise to build a strong security system for the app. One 
+other technical issue that we are likely to face is: Making sure that the video pauses exactly when a person disconnects from the app due 
+to internet issues. However, we believe with the development of 5G we will this soon be able to discard this problem. There is one other 
+political/cultural risk that we have to overcome i.e that many movies are censored and banned in different countries due to local laws and 
+culture. Therefore, friends who live in different countries or couples in a long-distance relationship may not be able to use the app.</p>
+<h2><a id = "group_processes_and_communications">Group Processes & Communications</a></h2>
+<p>For informal communications we plan to record any virtual meetings and calls we make. This will be accessible to all group members in MS 
+Teams. For in-person meetings we plan to use pen and paper to note things down and always have an audio recorder on so we do not miss anything. 
+This allows the team members to be up-to-date with all meetings even if they are unable to attend it and refer back to the recordings if they 
+can't recall something. Currently, we have 2 meetings per week on MS Teams which are recorded and uploaded to Teams. When the COVID-19 issue is 
+resolved we are likely to increase this. Our team has been very considerate and compassionate with our members all through the journey. We have 
+had members who went on leave and sometimes could not join meetings due to certain issues. The team has always stepped up and filled in for the 
+each other in times of need.</p>
+<h2><a id = "skills_and_jobs">Skills & Jobs</a></h2>
+<p>The team would need to employ certain members with different expertise to the existing team to launch and function the app properly. We will 
+need a CFO with good marketing skills, for the company to handle the financial side and marketing. We need a cyber security engineer to create 
+and execute secure network solutions that provide security against cyber-attacks, hackers, etc. We would also need a data analyst who will gather 
+data from various sources and then review and interpret it using data analysis tools to provide meaningful information and insights to help the 
+project, make faster and more informed decisions. Finally, we need a cloud engineer whose duties will be associated with cloud computing, including 
+design, planning, management, maintenance and support as the project is likely to require a lot of server space and prone to interent traffic.</p>
+<p>Test</p>
+</div>
+</body>
+</html>
