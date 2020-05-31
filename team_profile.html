@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Team Profile</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset = "utf-8"> 
+<style>
+.main {
+  margin: 30px 100px;
+  padding: 14px 20px;
+}
+
+h2 {
+	font-size: 32px;
+	padding-left: 14px;
+}
+
+body{
+	margin: 0;
+	font-family: Agency FB, Arial, Helvetica, sans-serif;
+}
+
+.title {
+	width: 100%;
+	padding: 5px 15px;
+	font-size: 28px;
+	font-family: Candara Light, Tahoma, Geneva, sans-serif;
+	background-color: gray;
+}
+
+p {
+	font-size: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+.container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.information {
+  margin-top: 175px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 150px;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subbutton {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  width: 182px;
+}
+
+
+.navbar a:hover, .subnav:hover .subbutton {
+  background-color: green;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: green;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  width: 150px;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+<!-- Tab style personal information -->
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 30px 50px;
+}
+
+.tabinfo {
+	padding-top: 50px;
+}
+
+<!-- Tab style team profile -->
+.team-profile-tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.team-profile-tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 33.333333%;
+}
+
+.team-profile-tab button:hover {
+  background-color: #ddd;
+}
+
+.team-profile-tab button.active {
+  background-color: #ccc;
+}
+
+.teamcontent {
+  display: none;
+  background-color: #f2f2f2;
+  height: 400px;
+}
+
+.personalitytable {
+	width: 100%;
+}
+
+.liam-personality {
+	background-color:#66e0ff;
+}
+
+.prottay-personality {
+	background-color: #ff9933;
+}
+
+.minh-personality {
+	background-color:#80ff80
+}
+
+.nick-personality {
+	background-color:#ffff66;
+}
+
+.tran-personality {
+	background-color:#ff4d4d;
+}
+
+</style>
+</head>
+<body>
+<div class = "container">
+	<div class = "title">
+	<h1>Yet to be named brigade</h1>
+	</div>
+	<div class="navbar">
+		<a href="home.html">Home</a>
+		<a href="team_profile.html">Team Profile</a>
+		<a href="tools.html">Tools</a>
+	  <a href="project_description.html">Project Description</a>
+	  <a href="overview.html">Overview</a>
+	  <div class="subnav">
+		<button class="subbutton">Detailed Description  <i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="detailed_description.html#aims">Aims</a>
+		  <a href="detailed_description.html#plans_and_progress">Plans & Progress</a>
+		  <a href="detailed_description.html#roles">Roles</a>
+		  <a href="detailed_description.html#scope_and_limits">Scope & Limits</a>
+		  <a href="detailed_description.html#tools_and_technologies">Tools & Technologies</a>
+		  <a href="detailed_description.html#testing">Testing</a>
+		  <a href="detailed_description.html#timeframe">Timeframe</a>
+		  <a href="detailed_description.html#risks">Risks</a>
+		  <a href="detailed_description.html#group_processes_and_communications">Group Processes & Communications</a>
+		  <a href="detailed_description.html#skills_and_jobs">Skills & Jobs</a>
+		</div>
+	  </div> 
+	  	<a href="reflection.html">Reflection</a>
+	</div>
+</div>
+
+
+<div class = "main">
+	<div>
+	<h1>Team Name</h1>
+	<p>Our teams name is "Yet to be Named Brigade". It was chosen originally as a placeholder but has since stuck.</p>
+	</div>
+	<div>
+	<h1>Personal Information</h1>
+	</div>
+	<div class="tab">
+	  <button class="tablinks" onclick="openName(event, 'Liam')">Liam</button>
+	  <button class="tablinks" onclick="openName(event, 'Prottay')">Prottay</button>
+	  <button class="tablinks" onclick="openName(event, 'Minh')">Minh</button>
+	  <button class="tablinks" onclick="openName(event, 'Nick')">Nick</button>
+	  <button class="tablinks" onclick="openName(event, 'Tran')">Tran</button>
+	</div>
+
+	<div style = "background-color:#66e0ff; padding-bottom: 120px;" id="Liam" class="tabcontent">
+		<div class = "tabinfo">
+		  <img src = "https://puu.sh/FqoK2/0a13fe9471.jpg" height = 360 width = 270 style= "float: right; margin-left: 20px; display: inline-block;">
+		  <h3>Liam Conrad</h3>
+		  <ul>
+		  <li>Date of Birth: 05/07/1998</li>
+		  <li>Student Number: 3829929</li>
+		  <li>Email Address: s3829929@student.rmit.edu.au</li>
+		  </ul>
+		  <p>Am an avid video game player, also a fan of esports with Counter-Strike and League of Legends being the two scenes i follow. I am also a huge fan of music with some of my favourite genres being:
+		  Future Bass, J-Core, Happy Hardcore and Speedcore.</p>
+		  <p>I took an interest in computers at an early age as I was always on them playing video games. As I've grown up i have found great enjoyment and satisfaction in playing games that require you to
+		  solve logic puzzles, this lead me to realise that i have an interest in programming and creating solutions for people using logic based tools.
+		</div>
+	</div>
+
+	<div style = "background-color: #ff9933; padding-bottom: 130px;" id="Prottay" class="tabcontent">
+		<div class = "tabinfo">
+		  <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/187562442@N03/49842856502/in/dateposted-public/" title="95063987_2729073437314095_8937410833659461632_n"><img style = "float:right; margin-left: 20px;" src="https://live.staticflickr.com/65535/49842856502_d5843863eb.jpg" width="480" height="360" alt="95063987_2729073437314095_8937410833659461632_n"></a></p>
+		  <h3>Prottay Karim</h3>
+		  <ul>
+		  <li>Student Number: 3822620</li>
+		  <li>Email Address: s3822620@student.rmit.edu.au</li>
+		  </ul>
+		  <p>I am currently studying Bachelor's of Information Technology at RMIT University. My student number is s3822620. I completed my highschool in 2019 from Wordbridge School in Bangladesh, the 
+		  country where I was born and raised. I grew up in a multi cultural house where I learned to speak not only English and Bengali, but also Hindi and Urdu. I am a self taught Cinematographer, also 
+		  I have been painting for over 10years now.</p>
+		  <p>I fell in love with the internet on the very first day I got access to the Internet. I was fascinated by the colors and designs of a "webpage" that I discovered and how it interacted with every 
+		  click. Whatever I wanted was just a click away from me. It was as if the 7 year old me had seen magic that day! From that day onwards my interests in IT grew stronger. I expect to learn quite a 
+		  few things from my time at RMIT. I want to learn Programming, IoT and cybersecurity.</p>
+		</div>
+	</div>
+
+	<div style = "background-color:#80ff80; padding-bottom: 210px;" id="Minh" class="tabcontent">
+		<div class = "tabinfo">
+			<img src="http://puu.sh/FFgZy/97a7777d7f.jpg" alt="Professional Profile Picture" height = "360" style = "float:right; margin-left: 20px;" >
+			<h3>Quang Minh Duong</h3>
+			<ul>
+				<li>Student ID: 3759757</li>
+				<li>Email address: s3759757@student.rmit.edu.au</li>
+			</ul>
+				<p>I come from Danang, Vietnam, I’m 20 years old. I completed my A-level degree in Vietnam two years ago and I just came to Melbourne to study abroad last year. 
+				I can speak two languages, which is Vietnamese and English, I’m also study the third language, which is Mandarin at this moment. Other than IT, I also have a hobby about soccer, play computer 
+				games and research about history.</p>
+		</div>
+	</div>
+
+	<div style = "background-color:#ffff66;" id="Nick" class="tabcontent">
+		<div class = "tabinfo">
+		<img src="https://puu.sh/FBHY5/a0d7e1c92b.jpg" alt="A picture of me" width="360" height="360" style = "float:right; margin-left: 20px;">
+		  <h3>Nicholas Massouridis</h3>
+		  <ul>
+			<li>Nicholas Massouridis</li>
+			<li>s3344701</li>
+			<li>Email: s3344701@student.rmit.edu.au</li>
+			<li>Greek/Australian</li>
+			<li>Completed year 12 in 2010</li>
+			<li>Can speak English, Greek and Mandarin Chinese</li>
+		   </ul>
+			<p>I enjoy playing video games, watching AFL and professional wrestling, watching/reading anime/manga. I have 1 dog named Harley; he is a Maltese shih-tzu cross.</p>
+
+			<p>Ever since I was a little kid, I have been interested in video games and computers. I enjoy seeing how things work and how they interact with each other. I currently have a little experience 
+			coding or anything software based, but I have built my own computer multiple times.</p>
+
+			<p>I’m not too sure what my ideal job is currently, I was hoping to get a better understanding or find what I enjoy doing by doing this course. I have found an interest in Artificial Intelligence 
+			and wish to explore where that will take me.</p>
+		</div>
+	</div>
+
+	<div style = "background-color:#ff4d4d; padding-bottom: 150px;" id="Tran" class="tabcontent">
+		<div class = "tabinfo">
+		  <img src = "https://puu.sh/FFgC1/eb129f3bec.jpg" height = 360 width = 160 style= "float: right; margin-left: 20px;">
+		  <h3>Tran Gia Luat Ung</h3>
+		  <ul>
+		  <li>Gender: Male</li>
+		  <li>Date of Birth: 17/03/1997</li>
+		  <li>Student Number: 3779300</li>
+		  <li>From: CanTho city, Vietnam</li>
+		  <li>Nationality: VIETNAMESE</li>
+		  <li>Spoken Languages: VIETNAMESE and ENGLISH</li>
+		  </ul>
+		  <p>I am an honest man, love sport, basketball passion, like hangout with friends, and addict in travelling.</p>
+		</div>
+	</div>
+		<div>
+<!-- DIY add you section on ideal jobs here -->
+			<h1>Ideal Jobs</h1>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc;">Liam</h2>
+				<p><a href = https://www.seek.com.au%2Fjob%2F41065961%3Ftype%3Dpromoted%23searchRequestToken%3D2005a72b-0047-4d87-abc7-b9c54d243b1c>Software Developer for Integrated Appliaction
+				Devlopment</a> is the job that i believe to be my ideal job. The role encompasses multiple aspect of IT including: database mangement, front and back end devlopment as well as 
+				planning and leading. This positino is appealing as it allows for a diversity in the type of work you are doing day to day and also allows you to come up with creative ways to
+				solve problems for the company.</p>
+		
+
+				<p>The skills required for this position are: knowledge of programming, ability to create and manage databases, be able to work with a team, communicaton. Qualifications required
+				are at a minimum a degree in an IT related course. No experience outside of work done to obtain a degree is required but any experience is welcomed.</p>
+
+				<p> My current experience and qualifications are very minimal however I have problem solving abilities as well as experience working in a group.</p>
+			</div>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc; text-align: right; padding-right: 10px;">Prottay</h2>
+				<p>My intrests in IT spread across alot of the fields. However, I'm yet to find my passion. I have been exploring Data Analytics for a few weeks and I keep bouncing on and off from Cyber Security to Data Analytics. However, I dream to have my own startup someday and become an entrepreneur. In the coming years I hope to develop my programming skills across a variety of languages especially python and R.</p>
+			</div>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc;">Minh</h2>
+				<p>In IT, I find that cyber security is the most interesting area for me. It probably started around 2014 when I watch the movie The 
+				Imitation Game, which is about a British computer scientist who has managed to crack Enigma, a German encryption device during
+				World War 2 and shorten the length of the war by two years. As I already mention that I also have an interest on history 
+				researching so this movie really inspired me about IT in general and cyber security in particular.</p>
+			</div>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc; text-align: right; padding-right: 10px;">Nick</h2>
+				
+				<p>I’m not too sure what my ideal job is currently, I was hoping to get a better understanding or find what I enjoy doing by doing this course. 
+				I have found an interest in Artificial Intelligence and wish to explore where that will take me.</p>
+			</div>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc;">Tran</h2>
+				<p>Business Analyst can work between their customer and their technical skate holders in defining the requirement, identifying and designing many aspects of solutions which suitable for business need.</p>
+				<p>It is the ideal position that I would like to apply for because I have ability to communicate with customers, I have knowledge about IT, and teamwork are suitable for myself! Therefore, this position is really interesting for me.</p>
+
+				<p>=> That is my ideal job, so, to adapt for it, I must build myself right now! Studying IT in RMIT, I have chance to approach with some experiece people, learn from them can help me acquire more knowledge. Moreover, I live and study in Melbourne, 
+				it is a really perfect condition for me to develop myself because Melbourne is a city many cultures in the world where I can meet international students, that can help me improve communicate skills. Furthermore, job of IT is a strong point of 
+				Melbourne so that is a good thing for me to equip necessary skills for my major!</p>
+			</div>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc; text-align: right; padding-right: 10px;">Compare/Contrast</h2>
+				<p>Prottay and Minh both have an interest in analytics but otherwise we are varied in our interests in the IT field. It is noticeable that our team lacks anyone with an interest in
+				a leadership poosition such as a manager. We also lack anyone with an interest in testing programs which is necessary if you want to launch a program with minimal issues for the end user.</p>
+			</div>
+	</div>
+</div>
+
+
+<!-- Script for personal information tab -->
+<script>
+function openName(evt, memberName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(memberName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<!-- Script for team profile tab -->
+<script>
+function openTest(evt, testName) {
+  var i, teamcontent, teamlinks;
+  teamcontent = document.getElementsByClassName("teamcontent");
+  for (i = 0; i < teamcontent.length; i++) {
+    teamcontent[i].style.display = "none";
+  }
+  teamlinks = document.getElementsByClassName("teamlinks");
+  for (i = 0; i < teamlinks.length; i++) {
+    teamlinks[i].className = teamlinks[i].className.replace(" active", "");
+  }
+  document.getElementById(testName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
