@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset = "utf-8"> 
+<style>
+.main {
+  margin: 30px 100px;
+  padding: 14px 20px;
+}
+
+body{
+	margin: 0;
+	font-family: Agency FB, Arial, Helvetica, sans-serif;
+}
+
+.title {
+	width: 100%;
+	padding: 5px 15px;
+	font-size: 28px;
+	font-family: Candara Light, Tahoma, Geneva, sans-serif;
+	background-color: gray;
+}
+
+p {
+	font-size: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+.container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.information {
+  margin-top: 175px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 150px;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subbutton {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  width: 182px;
+}
+
+
+.navbar a:hover, .subnav:hover .subbutton {
+  background-color: green;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: green;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+<div class = "container">
+	<div class = "title">
+	<h1>Yet to be named brigade</h1>
+	</div>
+	<div class="navbar">
+		<a href="home.html">Home</a>
+		<a href="team_profile.html">Team Profile</a>
+		<a href="tools.html">Tools</a>
+	  <a href="project_description.html">Project Description</a>
+	  <a href="overview.html">Overview</a>
+	  <div class="subnav">
+		<button class="subbutton">Detailed Description  <i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="detailed_description.html#aims">Aims</a>
+		  <a href="detailed_description.html#plans_and_progress">Plans & Progress</a>
+		  <a href="detailed_description.html#roles">Roles</a>
+		  <a href="detailed_description.html#scope_and_limits">Scope & Limits</a>
+		  <a href="detailed_description.html#tools_and_technologies">Tools & Technologies</a>
+		  <a href="detailed_description.html#testing">Testing</a>
+		  <a href="detailed_description.html#timeframe">Timeframe</a>
+		  <a href="detailed_description.html#risks">Risks</a>
+		  <a href="detailed_description.html#group_processes_and_communications">Group Processes & Communications</a>
+		  <a href="detailed_description.html#skills_and_jobs">Skills & Jobs</a>
+		</div>
+	  </div> 
+	</div>
+</div>
+
+
+<div class = "main">
+<div class = "main">
+<h2>What does it do?</h2>
+<p>Within the 12 week timeframe given for the project we aim to create both an application and web program for PC that will allow users to easily watch/listen to media together. The program titled 
+"Movie Night" will handle syncing the media up for all parties involved so they are able to experience what they are watching or listening to at the same. The program is run through the use of "sessions"
+which users can create and invite other to join. The user who created the session is the host of the session and can then choose the media to be played and when to play it, they also have to option to
+give the host role to another user who will then receive the ability to choose what media to be played and when to play it. On release there will be 2 session types, the "friends" session and the 
+"influencer" session. The friends session is aimed at those who are using the program with friends, when a video is played all users will be synced up to the host, if anyone has to pause of buffer the
+media, the media will be stopped for everyone else until it can resume for that user. The second type of session is the "influencer" session. The session is intended to be used by those who have an
+online following and want to connect with that audience by watching something with their fans. This mode works similar to the "friends" session but has someone with the "influencer" role who is selected
+by the host of the session. The influencer or host have the ability to choose the media and then everyone is synced up in the media to the point where the influencer is. If the influencer pauses or has
+to buffer the media it is stopped for everyone else however, if the media stops for anyone else they are the only one who is stopped there. The influencer session also limits the time in the video where
+other people in the session can go to with the current point in the media that the influencer is on being the latest point they can go to.</p>
+<p>On release users will be able to choose whether they want to link a video that will be played to everyone or upload a file that will be held in our servers for the duration of the session. If someone
+wants to premiere something on our service there is an option to upload the file and allow people in the session to pre load it and set a time when it will play for everyone. To reduce the load on
+our servers media uploaded will be erased once a session is terminated or if it has not been interacted with for an hour. If someone chooses a piece of media from a link then our servers will only handle
+the session and will have users stream the video from the video streaming service itself, this will ensure there is no unecessary use of our server capacity.</p>
+<p>In the future the program is planned to release on more devices. With a potential use for families and those who do not use a computer we intend to develop an application for all major gaming
+consoles and for certain brands of smart TV. The extra development time will allow us to make an application that is configured for use with a TV and is able to be controlled by a video game controller
+or a TV remote, as new features are added to smart TVs the ability to have voive chat enabled ffor the smart TV is a very real possability.</p>
+ <h2>What is the likely impact?</h2>
+<p>The development of this product will have an impact on people who use the internet as a primary communication method with their friends as well as influencers who want to engage with their audience.
+The ability to sync up media on multiple devices over the internet will allow friends to be able to wath or listen to something together without the need to sync it up manually and have a delayed
+experience due to human error. Influencers will be able to host events with their audience where they can watch or listen to a piece of media together without wading through the legality of streaming
+the actual content on their end. They will also benefit from the lack of human error that this program aids in eliminating. Apart from having an impact on people using the program for recreation and
+entertainment, the program can also change how businesses or educational facilities can conduct their business. During lockdown when schools are being conducted online, teachers can choose to create
+a session that will allow them to show media to the class without having to stream it which will free up resources on their computer which may stuggle to stream media to a group. Businesses can also
+use this to conduct meetings online with the ability to upload the media to our servers which can be streamed to their audience. Whilst these are some suggested uses we have identified during the 
+development of the program with the program constantly being updated it is possible that users will find other ways to take advantage of the program. With the potential to develop versions of this for 
+game consoles and smart TVs, families may be able to share media togther whith multiple parties watching from their respective device.</p>
+<h2>How will this  affect you?</h2>
+<p>The effect this has on day to day life will be felt most with those who consistently socialize on the internet. The ability to watch media with your friends will usher in a new age where trying
+to set up a way to watch something together is easy and the tedium of syncing up things manually is gone. Being able to socialize whilst watching media together will also be made easier with the in
+built text and voice chat functionality. With the ease of use and accessability it may also be a game changer for older people and those who are generally not as comfortable using technology as people
+who use it frequently. Setting up a session to catch up and watch things together can be a great way for older people or families who are apart to be able to connect and socialize together. It may also
+change and make more viable an online learning environment. Teachers could load up video resources for their class or even create a vido for the entire lesson and invite students to watch it in a
+session, this would negate the need for high end resources that are needed to run a live session that streams content from their computer to the students. Finally in the business world we may see a
+shift in choosing to use this as a means to meet and pitch to people around the world. With an ever expanding global market, the need to be able to communicate with people around the world in real time
+is crucial, being able to upload media to our service and play it in sync with those in your session will lead to much easier and fluid conversation around the topic.</p>
+</div>
+</body>
+</html>

@@ -5,8 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset = "utf-8"> 
 <style>
 .main {
+  top: 175px;
   margin: 30px 200px;
   padding: 14px 20px;
+  z-index: -1;
+  dispaly: block;
+  padding-top: 175px;
 }
 
 body{
@@ -34,7 +38,7 @@ p {
 }
 
 .container {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -147,6 +151,11 @@ table {
   tr:nth-child(even) {
     background-color: #dad6d6;
   } 
+  
+ .subtitle {
+	padding: 210px 0 0;
+ }
+  
 </style>
 </head>
 <body>
@@ -176,23 +185,23 @@ table {
 		</div>
 	  </div> 
 	</div>
+	 <div class="vertical-menu">
+  <a href="detailed_description.html#aims">Aims</a>
+  <a href="detailed_description.html#plans_and_progress">Plans & Progress</a>
+  <a href="detailed_description.html#roles">Roles</a>
+  <a href="detailed_description.html#scope_and_limits">Scope & Limits</a>
+  <a href="detailed_description.html#tools_and_technologies">Tools & Technologies</a>
+  <a href="detailed_description.html#testing">Testing</a>
+  <a href="detailed_description.html#timeframe">Timeframe</a>
+  <a href="detailed_description.html#risks">Risks</a>
+  <a href="detailed_description.html#group_processes_and_communications">Group Processes & Communications</a>
+  <a href="detailed_description.html#skills_and_jobs">Skills & Jobs</a></div>
 </div>
 
- <div class="vertical-menu">
-  <a href="#aims" class = "active">Aims</a>
-  <a href="#detailed_description.html#plans_and_progress">Plans & Progress</a>
-  <a href="#roles">Roles</a>
-  <a href="#scope_and_limits">Scope & Limits</a>
-  <a href="#tools_and_technologies">Tools & Technologies</a>
-  <a href="#testing">Testing</a>
-  <a href="#timeframe">Timeframe</a>
-  <a href="#risks">Risks</a>
-  <a href="#group_processes_and_communications">Group Processes & Communications</a>
-  <a href="#skills_and_jobs">Skills & Jobs</a>  
-  </div>
+
   
 <div class = "main">
-<h2><a id = "aims">Aims</a></h2>
+<h2><a id = "aims" class="subtitle">Aims</a></h2>
 <p>Basically, our main objective for this project is to provide an environment where people can watch something together without having to
  meet each other in real life. We see that this goal is very realistic during this COVID-19 outbreak as our project will allow people to 
  stay home and watch movie together instead of going to the cinema and become vulnerable to be infected by the disease. </p>
@@ -215,7 +224,7 @@ able to meet new people and make friends as they watch a movie in one of our hos
  <p>Just like any others movie platform, copyright is the issue that we have to solve, and it wouldn’t take a small amount of money to gain 
  the right to show a movie via the internet, especially recently released movie. This will be our last aim for the project but also the most 
  important one as it would require the most work and money to overcome it and when it does, everything mentioned above can finally become true.</p>
-<h2><a id = "plans_and_progress">Plans & Progress</a></h2>
+<h2><a id = "plans_and_progress" class="subtitle">Plans & Progress</a></h2>
 <p>As discussed previously our project will be a place where people can watch movie together online. Our group has decided to create this project 
 on PC platform first, before developing on other platform like mobile or even game console. This stage of development in term of platform based 
 is very realistic as it is simpler to create a PC based program and more people would spend time to watch movie on a PC rather than on a phone. 
@@ -245,10 +254,7 @@ task can be given out to each of the members. Secondly, we were doing a checklis
 identify our main goals and risks for this project. Since time needed to complete this project can be vague because it depends on a lot of things, we 
 are not sure when it can be officially release if we start working on it by now, our target would be to complete it before the end of this year as 
 the latest. </p>
-<h2><a id = "roles">Roles</a></h2>
-
-<h2><a id = "scope_and_limits">Scope & Limits</a></h2>
-
+<h2><a id = "roles" class="subtitle">Roles</a></h2>
 <p>For more effective work, it is very important to determine the role of each member in team and base on their strong areas. 
 <p>For Movie Night project </p>
 <p>Liam is a person who always suggest ideas, sets up the time of meeting, separates tasks in our team. 
@@ -261,7 +267,7 @@ important role. </p>
 compatible with technical roles, who will set up and support for any technical areas of our project. </p>
 <p> Prottay and Tran have knowledge about testing as well as making the survey to get the feedback of the users when Movie Night is released. We understand
  the important experienced of the user, so their feedback will be the key factors for our project improvement and maintenance also. </p>
-<h2><a id = "scope_and_limits">Scope & Limits</a></h2>
+<h2><a id = "scope_and_limits" class="subtitle">Scope & Limits</a></h2>
 <p><b>Scope</b></p>
 <p>When our project is completed, we will determine and approach to the potential customer such as teenagers and movie addicts or entertain application company 
 to demonstrate this project, about the aim, the scope, the competitive ability and the potential limits as well as demo how it work then get the feedback. We hope 
@@ -271,7 +277,7 @@ this project will be more popular in the future because it adapts to teenagers a
 <p><li> Difficult to competitive with other available streaming platforms </li> </p> 
 <p><li>Base on some its modern features so it might be not suitable for the old or some people who do not usually approach to modern technology, so it will take them a long time to know how to use it fluently.  <p></li>
 
-<h2><a id = "tools_and_technologies">Tools & Technologies</a></h2>
+<h2><a id = "tools_and_technologies" class="subtitle">Tools & Technologies</a></h2>
 <p>
   The hardware needed for this project, other than a computer and an internet connection, is a server to host connections between users. 
   As for software, any software development platform would do, such as <a href = "https://visualstudio.microsoft.com/vs/">Visual Studio</a>.
@@ -284,7 +290,7 @@ this project will be more popular in the future because it adapts to teenagers a
   As for prior knowledge, the whole group has experience using Github from the previous assignment as well as this one. 
   Other than that no-one has any experience with any of the other technologies listed, which would be a hurdle to overcome as new skills would need to be learned.
 </p>
-<h2><a id = "testing">Testing</a></h2>
+<h2><a id = "testing" class="subtitle">Testing</a></h2>
 <p>
   Testing is an integral part of software development, as such many tests will be performed in order to ensure that the Movie Night will be at its best when the time comes to deploy it.
   There are many different types of testing, however not all are applicable to this software. The types of testing that will be used when developing are:
@@ -314,7 +320,7 @@ this project will be more popular in the future because it adapts to teenagers a
  Depending on the type of tests done, the definition of success varies. 
  Success could mean that the software works or that it doesn't crash, regarding stress testing, it could mean that the servers can handle the load of hundreds, if not thousands, of users.  
 </p>
-<h2><a id = "timeframe">Timeframe</a></h2>
+<h2><a id = "timeframe" class="subtitle">Timeframe</a></h2>
 <table>
   <tr>
       <th>Team Member</th>
@@ -793,7 +799,7 @@ this project will be more popular in the future because it adapts to teenagers a
     </td>
 </tr>
 </table>
-<h2><a id = "risks">Risks</a></h2>
+<h2><a id = "risks" class="subtitle">Risks</a></h2>
 <p>This app has a few risks associated with it. There are always some generic risks associated with a project but in the case of our app we 
 have a few other risks.</p>
 
@@ -805,7 +811,7 @@ other technical issue that we are likely to face is: Making sure that the video 
 to internet issues. However, we believe with the development of 5G we will this soon be able to discard this problem. There is one other 
 political/cultural risk that we have to overcome i.e that many movies are censored and banned in different countries due to local laws and 
 culture. Therefore, friends who live in different countries or couples in a long-distance relationship may not be able to use the app.</p>
-<h2><a id = "group_processes_and_communications">Group Processes & Communications</a></h2>
+<h2><a id = "group_processes_and_communications" class="subtitle">Group Processes & Communications</a></h2>
 <p>For informal communications we plan to record any virtual meetings and calls we make. This will be accessible to all group members in MS 
 Teams. For in-person meetings we plan to use pen and paper to note things down and always have an audio recorder on so we do not miss anything. 
 This allows the team members to be up-to-date with all meetings even if they are unable to attend it and refer back to the recordings if they 
@@ -813,7 +819,7 @@ can't recall something. Currently, we have 2 meetings per week on MS Teams which
 resolved we are likely to increase this. Our team has been very considerate and compassionate with our members all through the journey. We have 
 had members who went on leave and sometimes could not join meetings due to certain issues. The team has always stepped up and filled in for the 
 each other in times of need.</p>
-<h2><a id = "skills_and_jobs">Skills & Jobs</a></h2>
+<h2><a id = "skills_and_jobs" class="subtitle">Skills & Jobs</a></h2>
 <p>The team would need to employ certain members with different expertise to the existing team to launch and function the app properly. We will 
 need a CFO with good marketing skills, for the company to handle the financial side and marketing. We need a cyber security engineer to create 
 and execute secure network solutions that provide security against cyber-attacks, hackers, etc. We would also need a data analyst who will gather 
